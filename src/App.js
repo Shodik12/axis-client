@@ -198,11 +198,11 @@ function App() {
         margin="normal"
         required
         fullWidth
-        placeholder="0838xxxxxxxxx"
+        placeholder="Example:0838xxxxxxxxx"
         onChange={handleMsisdn}
         value={msisdn}
         disabled={loading}
-        label="No Telp"
+        label="Masukan No Telp"
         InputProps={{
           endAdornment: (
             <InputAdornment position='end'>
@@ -219,8 +219,8 @@ function App() {
           margin="normal"
           required
           fullWidth
-          placeholder="XGHLJ"
-          label="OTP KODE"
+          placeholder="Example:XGHLJ"
+          label="MASUKAN KODE OTP"
           onChange={handleOtp}
           value={otp}
           name="otp"
@@ -270,7 +270,7 @@ function App() {
             displayEmpty
             onChange={handlePkgid}>
             <MenuItem value="">
-            <em>Pilih Paket </em>
+            <em>Pilih Paket :</em>
             
             </MenuItem>
           {pkgIds.map((pkg, i)=> <MenuItem key={i} value={pkg.pkgid}>{pkg.desc}</MenuItem>)}
@@ -285,7 +285,7 @@ function App() {
             className={classes.submit}
             disabled={loading}
           >
-            BELI PAKET
+            BELI PAKET SEKARANG!
           </Button>
         
         </form>
